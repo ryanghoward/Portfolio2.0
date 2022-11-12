@@ -22,7 +22,7 @@ const navItems = [
 
 const Nav = () => {
   return (
-    <nav>
+    <div>
       <ul className='flex space-x-8 capitalize text-[15px]'>
         {navItems.map((item, index) => {
           return (
@@ -45,7 +45,7 @@ const Nav = () => {
           );
         })}
       </ul>
-    </nav>
+    </div>
   );
 };
 
