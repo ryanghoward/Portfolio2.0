@@ -4,7 +4,7 @@ import myFace from "../assets/Ryan.PNG";
 
 const Hero = () => {
   return (
-    <div className='h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0'>
+    <div className='h-[85vh] bg-gradient-to-r from-cyan-500 to-purple-900 flex items-center py-32 lg:py-0'>
       <div className='container h-full mx-auto'>
         <div className='flex items-center h-full pt-8'>
           <div className='flex flex-col items-center flex-1 lg:items-start'>
