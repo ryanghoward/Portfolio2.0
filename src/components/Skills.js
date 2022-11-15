@@ -34,10 +34,8 @@ const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className='bg-[#fff] h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-2xl'>
-              <h2 className='bg-gradient-to-r from-purple-900 via-cyan-500 to-cyan-900 inline-block text-transparent bg-clip-text text-6xl font-bold mt-4'>
-                Skills
-              </h2>
+            <div className='bg-gray-400 h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-2xl'>
+              <h2 className='text-black text-6xl font-bold mt-4'>Skills</h2>
               <p className='text-xl text-black mt-4'>
                 These are the technologies I work with
               </p>
