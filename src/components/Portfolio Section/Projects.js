@@ -8,18 +8,6 @@ import FF from "../../assets/projects/Fakeflix.PNG";
 import EX from "../../assets/projects/Explore.PNG";
 import Project from "./Project";
 
-const projectsNav = [
-  {
-    name: "featured",
-  },
-  {
-    name: "web development",
-  },
-  {
-    name: "mobile",
-  },
-];
-
 const Projects = () => {
   const projectsData = [
     {
@@ -74,7 +62,7 @@ const Projects = () => {
 
   const [item, setItem] = useState({ name: "featured" });
   const [projects, setProjects] = useState([]);
-  const [active, setActive] = useState(0);
+  // const [active, setActive] = useState(0);
 
   useEffect(() => {
     if (item.name === "featured") {
@@ -87,15 +75,15 @@ const Projects = () => {
     }
   }, [item]);
 
-  const handleClick = (e, index) => {
-    setItem({ name: e.target.textContent.toLowerCase() });
-    setActive(index);
-  };
+  // const handleClick = (e, index) => {
+  //   setItem({ name: e.target.textContent.toLowerCase() });
+  //   setActive(index);
+  // };
 
   return (
     <>
       <div className='max-w-xl mx-auto mb-12'>
-        <ul className='flex flex-col items-center text-paragraph sm:flex-row justify-evenly'>
+        {/* <ul className='flex flex-col items-center text-paragraph sm:flex-row justify-evenly'>
           {projectsNav.map((item, index) => {
             return (
               <li
@@ -111,7 +99,7 @@ const Projects = () => {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
       </div>
       <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
         {projects.map((item) => {
