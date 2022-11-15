@@ -24,71 +24,71 @@ const Projects = () => {
   const projectsData = [
     {
       id: "1",
-      title: "Fakeflix",
+      name: "Fakeflix",
       description: "Netflix Clone",
-      imgUrl: FF,
+      image: FF,
       siteUrl: "https://fakeflix-be7a7.web.app/",
       codeUrl: "https://github.com/ryanghoward/Fakeflix",
     },
     {
       id: "2",
-      title: "VHCL",
+      name: "VHCL",
       description: "Turo Clone",
-      imgUrl: VHCL,
+      image: VHCL,
       siteUrl: "https://ryanghoward.github.io/VHCL/",
       codeUrl: "https://github.com/ryanghoward/VHCL",
     },
     {
       id: "3",
-      title: "Explore",
+      name: "Explore",
       description: "Travel Site Landing Page",
-      imgUrl: EX,
+      image: EX,
       siteUrl: "https://ryanghoward.github.io/travel-site/",
       codeUrl: "https://github.com/ryanghoward/travel-site",
     },
     {
       id: "4",
-      title: "Underdog Devs",
+      name: "Underdog Devs",
       description: "Underdog Devs Website",
-      imgUrl: UDD,
+      image: UDD,
       siteUrl: "https://www.underdogdevs.org/",
       codeUrl: "https://github.com/BloomTech-Labs/underdog-devs-fe-a",
     },
     {
       id: "5",
-      title: "Potluck Planner",
+      name: "Potluck Planner",
       description: "Potluck Organizing & Planning App",
-      imgUrl: PP,
+      image: PP,
       siteUrl: "https://potluck1-front-end.vercel.app/",
       codeUrl: "https://github.com/Potluck-Planner-A",
     },
     {
       id: "6",
-      title: "I Wet My Plants",
+      name: "I Wet My Plants",
       description: "Plant Watering Schedule App",
-      imgUrl: WMP,
+      image: WMP,
       siteUrl: "https://water-my-plants-9-build-week.vercel.app/",
       codeUrl: "https://github.com/Build-Week-Water-My-Plants-8/front-end",
     },
   ];
 
-  const [item, setItem] = useState({ title: "featured" });
+  const [item, setItem] = useState({ name: "featured" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (item.title === "featured") {
+    if (item.name === "featured") {
       setProjects(projectsData);
     } else {
       const newProjects = projectsData.filter((project) => {
-        return project.category.toLowerCase() === item.title;
+        return project.category.toLowerCase() === item.name;
       });
       setProjects(newProjects);
     }
   }, [item]);
 
   const handleClick = (e, index) => {
-    setItem({ title: e.target.textContent.toLowerCase() });
+    setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
 
@@ -114,7 +114,7 @@ const Projects = () => {
         </ul>
       </div>
       <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
-        {projectsData.map((item) => {
+        {projects.map((item) => {
           return <Project item={item} key={item.id} />;
         })}
       </div>

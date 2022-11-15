@@ -21,6 +21,22 @@ const Project = ({ item }) => {
         <p className='max-w-full text-lg font-semibold text-center'>
           {item.desc}
         </p>
+        <a
+          className='mr-4 hover:underline'
+          href={item.siteUrl}
+          target='_blank'
+          rel='noreferrer'
+        >
+          View Site
+        </a>
+        <a
+          className='hover:underline'
+          href={item.codeUrl}
+          target='_blank'
+          rel='noreferrer'
+        >
+          View Code
+        </a>
       </a>
     </div>
   );
