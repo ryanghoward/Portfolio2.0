@@ -28,20 +28,22 @@ const Skills = () => {
 
   return (
     <section
-      className='ml-12 flex items-center justify-center h-[100vh]'
+      className='bg-gradient-to-l from-cyan-500 to-violet-900 flex items-center justify-center h-[100vh]'
       id='skills'
     >
       <Container>
         <Row>
           <Col>
-            <div className='bg-[#555] rounded-[3rem] text-center py-4 px-3'>
-              <h2 className='text-5xl text-white font-bold mt-4'>Skills</h2>
-              <p className='text-xl text-white'>
+            <div className='bg-[#fff] h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-2xl'>
+              <h2 className='bg-gradient-to-r from-purple-900 via-cyan-500 to-cyan-900 inline-block text-transparent bg-clip-text text-6xl font-bold mt-4'>
+                Skills
+              </h2>
+              <p className='text-xl text-black mt-4'>
                 These are the technologies I work with
               </p>
               {/* <hr className='mt-4 mb-4' /> */}
               <Carousel
-                className='mx-auto mb-10 mt-10'
+                className='mx-auto mb-10 mt-20'
                 swipeable={false}
                 draggable={false}
                 arrows={true}
@@ -56,11 +58,11 @@ const Skills = () => {
                 {skills.map((skill) => (
                   <div key={skill.id} className='h-full'>
                     <img
-                      className='h-[10rem] mx-auto object-contain flex items-center'
+                      className='h-[10rem] w-[10rem] mx-auto object-contain flex items-center'
                       src={skill.img}
                       alt={skill.name}
                     />
-                    <h5 className='mt-4 text-xl text-white text-center'>
+                    <h5 className='mt-4 text-xl text-black text-center'>
                       {skill.name}
                     </h5>
                   </div>

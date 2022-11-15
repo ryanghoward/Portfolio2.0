@@ -6,7 +6,7 @@ import me from "../assets/me.jpg";
 const Hero = () => {
   return (
     <div
-      className='h-[100vh] bg-gradient-to-r from-cyan-500 to-purple-900 flex items-center py-32 lg:py-0'
+      className='h-[100vh] bg-gradient-to-r from-cyan-500 to-violet-900 flex items-center py-32 lg:py-0'
       id='home'
     >
       <div className='container h-full mx-auto'>
@@ -17,7 +17,7 @@ const Hero = () => {
               <span className='font-light'>, I'm Ryan!</span>
             </p>
             <h1 className='text-white text-center text-4xl leading-[44px] sm:text-center md:text-5xl md:leading-tight md:text-left lg:text-5xl lg:leading-[1.2] font-normal font-body md:tracking-[2px]'>
-              I design and create websites and apps.
+              I design and create <br /> websites and apps.
             </h1>
             <p className='text-white pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left'>
               I am a full-stack developer (specializing in front-end

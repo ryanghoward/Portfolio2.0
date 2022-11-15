@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-scroll";
 import aboutImg from "../assets/code7.jpg";
 import { BsArrowRight } from "react-icons/bs";
+import aboutText from "../assets/text/about.svg";
 
 const About = () => {
   return (
-    <div className='h-[100vh]' id='about'>
+    <div className='h-[100vh] section' id='about'>
       <div className='container flex items-center justify-center mx-auto'>
         <div className='relative flex flex-col items-centergap-24 lg:items-center xl:flex-row'>
           <img
@@ -14,7 +15,7 @@ const About = () => {
             alt='About'
             loading='lazy'
           />
-          <div className='flex flex-col items-center text-center ml-10 h-[31em] justify-center lg:items-center lg:text-left'>
+          <div className='flex flex-col items-center text-center ml-10 h-[31em] justify-center lg:items-start lg:text-left'>
             <div className='flex flex-col'>
               <h2 className='text-3xl text-accent-hover lg:text-4xl font-medium lg:font-light mb-3 before:content-about relative before:absolute before:opacity-80 before:-top-[2.3rem] before:-left-[1rem] before:hidden before:lg:block'>
                 <span className='opacity-80'>Ryan G. Howard</span>
