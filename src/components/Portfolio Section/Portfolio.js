@@ -1,5 +1,6 @@
 import React from "react";
 import portfolio from "../../assets/text/portfolio.svg";
+import Projects from "./Projects";
 
 const Portfolio = () => {
   return (
@@ -13,6 +14,7 @@ const Portfolio = () => {
             Check out some of my most recent projects
           </p>
         </div>
+        <Projects />
       </div>
     </div>
   );

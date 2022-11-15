@@ -12,7 +12,7 @@ const Project = ({ item }) => {
           <img
             className='w-full h-full max-h-[420px] rounded-md max-w-[800px]'
             src={item.image}
-            alt='/'
+            alt={item.title}
           />
         </div>
         <h3 className='mb-3 text-2xl font-semibold underline capitalize'>
