@@ -34,12 +34,14 @@ const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className='bg-gray-400 h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-2xl'>
-              <h2 className='text-black text-6xl font-bold mt-4'>Skills</h2>
-              <p className='text-xl text-black mt-4'>
+            <div className='bg-transparent h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-2xl'>
+              <h2 className='text-6xl font-bold mt-4 bg-gradient-to-r from-yellow-500 to-red-600 inline-block text-transparent bg-clip-text'>
+                Skills
+              </h2>
+              <p className='text-xl text-white mt-4'>
                 These are the technologies I work with
               </p>
-              {/* <hr className='mt-4 mb-4' /> */}
+              {/* <hr className='mt-4 mb-4 mx-auto w-[45%]' /> */}
               <Carousel
                 className='mx-auto mb-10 mt-20'
                 swipeable={false}
@@ -60,7 +62,7 @@ const Skills = () => {
                       src={skill.img}
                       alt={skill.name}
                     />
-                    <h5 className='mt-4 text-xl text-black text-center'>
+                    <h5 className='mt-4 text-xl text-white text-center'>
                       {skill.name}
                     </h5>
                   </div>

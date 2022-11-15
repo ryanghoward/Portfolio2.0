@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div
       className={`${
-        background ? "bg-primary h-24 shadow-md" : "h-24"
+        background ? "bg-black h-24 shadow-md" : "h-24"
       } flex items-center fixed top-0 w-full text-white z-20 transition-all duration-300`}
     >
       <div className='container flex items-center justify-between h-full mx-auto'>

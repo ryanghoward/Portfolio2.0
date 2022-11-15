@@ -7,16 +7,16 @@ import aboutText from "../assets/text/about.svg";
 const About = () => {
   return (
     <div className='h-[100vh] section' id='about'>
-      <div className='container flex items-center justify-center mx-auto'>
+      <div className='container flex items-center justify-center mx-auto h-full'>
         <div className='relative flex flex-col items-centergap-24 lg:items-center xl:flex-row'>
           <img
-            className='object-cover h-full max-w-[566px] hidden xl:flex lg:mx-0 rounded-2xl z-10'
+            className='object-cover h-full max-w-[566px] hidden xl:flex lg:mx-0 rounded-2xl drop-shadow-2xl z-10'
             src={aboutImg}
             alt='About'
             loading='lazy'
           />
           <div className='flex flex-col items-center text-center ml-10 h-[31em] justify-center lg:items-start lg:text-left'>
-            <div className='flex flex-col'>
+            <div className='flex flex-col text-gray-700'>
               <h2 className='text-3xl text-accent-hover lg:text-4xl font-medium lg:font-light mb-3 before:content-about relative before:absolute before:opacity-80 before:-top-[2.3rem] before:-left-[1rem] before:hidden before:lg:block'>
                 <span className='opacity-80'>Ryan G. Howard</span>
               </h2>

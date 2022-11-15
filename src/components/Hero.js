@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import myFace from "../assets/Ryan.PNG";
+// import myFace from "../assets/Ryan.PNG";
 import me from "../assets/me.jpg";
 
 const Hero = () => {
