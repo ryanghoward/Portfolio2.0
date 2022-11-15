@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className='h-[73vh] sm:h-[75.5vh]'>
+    <div className='h-[100vh]' id='about'>
       <div className='container flex items-center justify-center mx-auto'>
         <div className='relative flex flex-col items-centergap-24 lg:items-center xl:flex-row'>
           <img
