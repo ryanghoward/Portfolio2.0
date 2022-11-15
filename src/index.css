@@ -4,10 +4,12 @@
 
 /* Skills */
 .skill {
+  margin-left: 12rem;
   position: center;
-  background: #000;
-  margin-top: 5rem;
-  margin-bottom: 20rem;
+  /* background: #000; */
+  /* margin-top: 5rem; */
+  /* margin-bottom: 20rem; */
+  height: 100vh;
 }
 
 .item img {
@@ -18,10 +20,12 @@
 .item h5 {
   margin-top: 1rem;
   font-size: 1.25rem;
+  color: #fff;
 }
 
 .skill-box {
-  background: #222;
+  background: #888;
+  /* border: 1px solid red; */
   border-radius: 4rem;
   text-align: center;
   padding: 4rem 3rem;
@@ -33,7 +37,8 @@
 }
 
 .skill p {
-  color: #b8b8b8;
+  /* color: #b8b8b8; */
+  color: #fff;
   font-size: 1.2rem;
   letter-spacing: 0.8px;
   line-height: 1.5em;

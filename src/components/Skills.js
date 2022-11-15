@@ -27,15 +27,21 @@ const Skills = () => {
   };
 
   return (
-    <section className='skill'>
+    // <section className='skill'>
+    <section className='ml-12 flex items-center justify-center h-[100%]'>
       <Container>
         <Row>
           <Col>
-            <div className='skill-box'>
-              <h2>Skills</h2>
-              <p>These are the technologies I work with</p>
+            {/* <div className='skill-box'> */}
+            <div className='bg-[#555] rounded-[3rem] text-center py-4 px-3'>
+              <h2 className='text-5xl text-white font-bold mt-4'>Skills</h2>
+              <p className='text-xl text-white'>
+                These are the technologies I work with
+              </p>
+              <hr className='mt-4 mb-4' />
               <Carousel
-                className='skill-slider'
+                // className='skill-slider'
+                className='mb-0 mt-8 mx-auto w-full h-full flex items-center justify-center'
                 swipeable={false}
                 draggable={false}
                 arrows={true}
@@ -48,9 +54,16 @@ const Skills = () => {
                 transitionDuration={1000}
               >
                 {skills.map((skill) => (
-                  <div key={skill.id} className='item'>
-                    <img src={skill.img} alt={skill.name} />
-                    <h5>{skill.name}</h5>
+                  <div key={skill.id}>
+                    {/* className-'item' -- above original */}
+                    <img
+                      className='h-[10rem] mx-auto object-contain flex items-center'
+                      src={skill.img}
+                      alt={skill.name}
+                    />
+                    <h5 className='mt-4 text-xl text-white text-center'>
+                      {skill.name}
+                    </h5>
                   </div>
                 ))}
               </Carousel>
