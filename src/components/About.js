@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-scroll";
 import aboutImg from "../assets/code7.jpg";
 import { BsArrowRight } from "react-icons/bs";
-import aboutText from "../assets/text/about.svg";
 
 const About = () => {
   return (
-    <div className='h-[100vh] section' id='about'>
+    <div className='h-[75vh] section' id='about'>
       <div className='container flex items-center justify-center mx-auto h-full'>
         <div className='relative flex flex-col items-centergap-24 lg:items-center xl:flex-row'>
           <img

@@ -34,11 +34,11 @@ const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className='bg-transparent h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-2xl'>
-              <h2 className='text-6xl font-bold mt-4 bg-gradient-to-r from-yellow-500 to-red-600 inline-block text-transparent bg-clip-text'>
+            <div className='bg-gray-500 h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-2xl'>
+              <h2 className='text-6xl mx-auto font-bold mt-4 bg-gradient-to-r from-yellow-500 to-red-600 inline-block text-transparent bg-clip-text'>
                 Skills
               </h2>
-              <p className='text-xl text-white mt-4'>
+              <p className='text-xl text-white mt-4 mb-4'>
                 These are the technologies I work with
               </p>
               {/* <hr className='mt-4 mb-4 mx-auto w-[45%]' /> */}
