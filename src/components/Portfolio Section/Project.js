@@ -4,7 +4,6 @@ const Project = ({ item }) => {
   return (
     <div
       key={item.id}
-      id='portfolio'
       className='flex flex-col items-center p-4 text-center duration-300 rounded-md cursor-pointer hover:scale-110 transition-all'
     >
       <a href={item.link} rel='noreferrer' target='_blank'>
@@ -15,7 +14,7 @@ const Project = ({ item }) => {
             alt={item.title}
           />
         </div>
-        <h3 className='mb-3 text-2xl font-semibold underline capitalize'>
+        <h3 className='mb-3 text-2xl text-tertiary font-semibold hover:underline capitalize'>
           {item.name}
         </h3>
         <p className='max-w-full text-lg font-semibold text-center'>

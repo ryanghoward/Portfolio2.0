@@ -82,26 +82,8 @@ const Projects = () => {
 
   return (
     <>
-      <div className='max-w-xl mx-auto mb-12'>
-        {/* <ul className='flex flex-col items-center text-paragraph sm:flex-row justify-evenly'>
-          {projectsNav.map((item, index) => {
-            return (
-              <li
-                onClick={(e) => {
-                  handleClick(e, index);
-                }}
-                className={`${
-                  active === index ? "active" : ""
-                } cursor-pointer capitalize m-4`}
-                key={index}
-              >
-                {item.name}
-              </li>
-            );
-          })}
-        </ul> */}
-      </div>
-      <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
+      <hr className='mt-8 mb-8 opacity-50' />
+      <div className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8 drop-shadow-4xl'>
         {projects.map((item) => {
           return <Project item={item} key={item.id} />;
         })}

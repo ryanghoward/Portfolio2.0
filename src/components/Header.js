@@ -1,21 +1,24 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import loadable from "@loadable/component";
 import { Link } from "react-scroll";
-import Nav from "./Nav";
-import Social from "./Social";
+
+const Navbar = loadable(() => import("./Navbar"));
+const Socials = loadable(() => import("./Socials"));
+const NavMobile = loadable(() => import("./NavMobile"));
 
 const Header = () => {
-  const [background, setBackground] = useState(false);
+  const [bg, setBg] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      return window.scrollY > 50 ? setBackground(true) : setBackground(false);
+      return window.scrollY > 50 ? setBg(true) : setBg(false);
     });
   });
 
   return (
-    <div
+    <header
       className={`${
-        background ? "bg-black h-24 shadow-md" : "h-24"
+        bg ? "bg-primary h-24 shadow-md" : "h-24"
       } flex items-center fixed top-0 w-full text-white z-20 transition-all duration-300`}
     >
       <div className='container flex items-center justify-between h-full mx-auto'>
@@ -28,13 +31,16 @@ const Header = () => {
           RGH
         </Link>
         <div className='hidden lg:block'>
-          <Nav />
+          <Navbar />
         </div>
         <div className='hidden lg:block'>
-          <Social />
+          <Socials />
+        </div>
+        <div className='lg:hidden'>
+          <NavMobile />
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -1,7 +1,6 @@
-import React from "react";
 import { SlSocialLinkedin, SlSocialGithub } from "react-icons/sl";
 
-const socialIcons = [
+export const socialIcons = [
   {
     icon: <SlSocialLinkedin size={30} />,
     href: "https://www.linkedin.com/in/ryangeorgehoward/",

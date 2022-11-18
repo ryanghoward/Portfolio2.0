@@ -1,34 +1,11 @@
-import React from "react";
+import { navigation } from "../data";
 import { Link } from "react-scroll";
 
-const navItems = [
-  {
-    name: "home",
-    href: "home",
-  },
-  {
-    name: "about",
-    href: "about",
-  },
-  {
-    name: "skills",
-    href: "skills",
-  },
-  {
-    name: "portfolio",
-    href: "portfolio",
-  },
-  {
-    name: "contact",
-    href: "contact",
-  },
-];
-
-const Nav = () => {
+const Navbar = () => {
   return (
-    <div>
+    <nav>
       <ul className='flex space-x-8 capitalize text-[15px]'>
-        {navItems.map((item, index) => {
+        {navigation.map((item, index) => {
           return (
             <li
               className='text-lg uppercase cursor-pointer text-paragraph hover:text-accent'
@@ -49,8 +26,8 @@ const Nav = () => {
           );
         })}
       </ul>
-    </div>
+    </nav>
   );
 };
 
-export default Nav;
+export default Navbar;
