@@ -2,7 +2,7 @@ import Socials from "./Socials";
 import { useState } from "react";
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";
-import { navigation } from "../data";
+import { navigation } from "./Navbar";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 

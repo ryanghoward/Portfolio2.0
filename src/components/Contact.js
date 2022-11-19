@@ -1,6 +1,22 @@
 // import emailjs from "@emailjs/browser";
-// import { contact } from "../../data";
 // import { useState } from "react";
+
+// import { FiMail, FiMapPin } from "react-icons/fi";
+
+// const contact = [
+//   {
+//     icon: <FiMail size={35} />,
+//     title: "Have a question?",
+//     subtitle: "I am here to help you.",
+//     description: "Let's create something together!",
+//   },
+//   {
+//     icon: <FiMapPin size={35} />,
+//     title: "Current Location",
+//     subtitle: "Cleveland, OH",
+//     description: "Serving clients worldwide.",
+//   },
+// ];
 
 // const Contact = () => {
 //   const [success, setSuccess] = useState("");
