@@ -42,15 +42,12 @@ const NavMobile = () => {
       <div onClick={handleClick} className='cursor-pointer text-paragraph'>
         <MenuAlt3Icon className='w-8 h-8' />
       </div>
-
-      {/* circle */}
       <motion.div
         variants={circleVariants}
         initial='hidden'
         animate={isOpen ? "visible" : "hidden"}
         className='fixed top-0 right-0 w-4 h-4 rounded-full bg-[#99D9D9]'
       ></motion.div>
-
       <motion.ul
         variants={ulVariants}
         initial='hidden'

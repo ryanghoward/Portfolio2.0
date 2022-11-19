@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import loadable from "@loadable/component";
 import { Link } from "react-scroll";
 
-const Navbar = loadable(() => import("./Navbar"));
-const Socials = loadable(() => import("./Socials"));
-const NavMobile = loadable(() => import("./NavMobile"));
+import Navbar from "./Navbar";
+import Socials from "./Socials";
+import NavMobile from "./NavMobile";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -26,7 +25,7 @@ const Header = () => {
           to='home'
           smooth={true}
           duration={1100}
-          className='text-xl font-semibold tracking-widest transition-all duration-300 cursor-pointer text-accent hover:text-paragraph'
+          className='text-xl font-semibold tracking-widest transition-all duration-300 cursor-pointer text-tertiary hover:text-white'
         >
           RGH
         </Link>

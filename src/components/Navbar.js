@@ -8,7 +8,7 @@ const Navbar = () => {
         {navigation.map((item, index) => {
           return (
             <li
-              className='text-lg uppercase cursor-pointer text-paragraph hover:text-accent'
+              className='text-lg uppercase cursor-pointer text-tertiary hover:text-primary hover:underline'
               key={index}
             >
               <Link
