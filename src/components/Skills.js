@@ -28,7 +28,7 @@ const Skills = () => {
 
   return (
     <section
-      className='bg-gradient-to-l from-cyan-500 to-violet-900 flex items-center justify-center h-[100vh]'
+      className='bg-gradient-to-r from-cyan-500 to-violet-900 flex items-center justify-center h-[100vh]'
       id='skills'
     >
       <Container>
@@ -46,8 +46,8 @@ const Skills = () => {
                 className='mx-auto mb-10 mt-20'
                 swipeable={false}
                 draggable={false}
-                // arrows={true}
-                // removeArrowOnDeviceType={["tablet", "mobile"]}
+                arrows={true}
+                removeArrowOnDeviceType={["tablet", "mobile"]}
                 responsive={responsive}
                 infinite={true}
                 autoPlay={true}

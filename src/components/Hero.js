@@ -3,7 +3,7 @@ import heroImg from "../assets/me.jpg";
 
 const Hero = () => {
   return (
-    <section className='bg-gradient-to-l from-cyan-500 to-violet-900 bg-fixed h-[85vh] flex items-center lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 '>
+    <section className='bg-gradient-to-r from-cyan-500 to-violet-900 bg-fixed h-[85vh] flex items-center lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 '>
       <div className='container h-full mx-auto'>
         <div className='flex items-center h-full pt-8'>
           <div className='flex flex-col items-center flex-1 lg:items-start'>
