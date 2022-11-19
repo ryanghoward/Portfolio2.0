@@ -34,8 +34,8 @@ const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className='bg-gradient-to-r from-black via-gray-700 to-gray-500 h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-4xl'>
-              <h2 className='text-6xl mx-auto font-bold mt-4 bg-gradient-to-r from-yellow-500 to-red-600 inline-block text-transparent bg-clip-text'>
+            <div className='bg-primary h-[50vh] rounded-[3rem] text-center py-4 px-3 drop-shadow-4xl'>
+              <h2 className='text-6xl mx-auto font-bold mt-4 text-tertiary'>
                 Skills
               </h2>
               <p className='text-xl text-tertiary mt-4 mb-4'>
@@ -46,8 +46,8 @@ const Skills = () => {
                 className='mx-auto mb-10 mt-20'
                 swipeable={false}
                 draggable={false}
-                arrows={true}
-                removeArrowOnDeviceType={["tablet", "mobile"]}
+                // arrows={true}
+                // removeArrowOnDeviceType={["tablet", "mobile"]}
                 responsive={responsive}
                 infinite={true}
                 autoPlay={true}
@@ -58,7 +58,7 @@ const Skills = () => {
                 {skills.map((skill) => (
                   <div key={skill.id} className='h-full'>
                     <img
-                      className='h-[10rem] w-[10rem] mx-auto object-contain flex items-center'
+                      className='h-[9rem] w-[9rem] mx-auto object-contain flex items-center'
                       src={skill.img}
                       alt={skill.name}
                     />

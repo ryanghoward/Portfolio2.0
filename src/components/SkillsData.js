@@ -21,7 +21,7 @@ import Bun from "../assets/skills/bun.png";
 import Firebase from "../assets/skills/firebase.png";
 import Heroku from "../assets/skills/heroku.svg";
 import Vercel from "../assets/skills/vercel.png";
-import SQLite from "../assets/skills/SQLite.png";
+import SQLite from "../assets/skills/SQLite.svg";
 import PostgreSQL from "../assets/skills/PostgreSQL.png";
 import MySQL from "../assets/skills/mysql.png";
 import GraphQL from "../assets/skills/graphql.png";

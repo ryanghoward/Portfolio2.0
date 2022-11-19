@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      body: "Urbanist",
+      body: "Poppins",
     },
     container: {
       padding: {
